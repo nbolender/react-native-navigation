@@ -24,5 +24,11 @@
 	XCTAssertEqual(openMode.get.integerValue, MMOpenDrawerGestureModeAll);
 }
 
+- (void)testParseNoneOpenModeReturnDrawerGestureModeNone {
+	NSDictionary* dict = @{@"openMode": @"none"};
+	SideMenuOpenMode* openMode = [SideMenuOpenGestureModeParser parse:dict key:@"openMode"];
+	XCTAssertEqual(openMode.get.integerValue, MMOpenDrawerGestureModeNone);
+}
+
 
 @end
