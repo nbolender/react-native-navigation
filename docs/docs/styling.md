@@ -233,7 +233,7 @@ Navigation.mergeOptions(this.props.componentId, {
       animationVelocity: 2500 // defaults to 840, high number is a faster sideMenu open/close animation
     },
     animationType: 'parallax', // defaults to none if not provided, options are 'parallax', 'door', 'slide', or 'slide-and-scale'    
-    openGestureMode: 'entireScreen' | 'bezel'
+    openGestureMode: 'entireScreen' | 'bezel' | 'none'
   }
   bottomTabs: {
     barStyle: 'default' | 'black',
